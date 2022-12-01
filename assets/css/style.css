@@ -46,3 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+    font-family: open-sans;
+    src: url(../webfonts/open_sans/OpenSans-Regular.ttf) format('truetype');
+}
+
+*{
+    font-family: OpenSans-Regular
+}
