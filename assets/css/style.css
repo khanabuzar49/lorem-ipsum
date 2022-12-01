@@ -63,3 +63,56 @@ a{
 a:hover{
     color: red;
 }
+
+#lang{
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 109px;
+    margin-left: 290px;
+    margin-right: 356px;
+}
+
+#title{
+    text-align: center;
+    margin-left: 309px;
+    margin-right: 309px;
+}
+
+h1{
+    font-size: 70px;
+    line-height: 90px;
+}
+
+#title p{
+    font-size: 17px;
+    line-height: 23px;
+}
+
+#content{
+    margin-left: 309px;
+    margin-right: 309px;
+}
+
+#content p{
+    margin-bottom: 20px;
+}
+
+.link{
+    font-weight: bold;
+}
+
+.mail{
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.mail a{
+    text-decoration: none;
+}
+
+hr{
+    background-image: linear-gradient(to right, white, black, white);
+    border: 0px;
+    height: 1px;
+}
