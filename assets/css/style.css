@@ -53,5 +53,13 @@ table {
 }
 
 *{
-    font-family: OpenSans-Regular
+    font-family: OpenSans-Regular;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: red;
 }
