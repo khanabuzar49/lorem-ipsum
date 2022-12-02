@@ -48,12 +48,12 @@ table {
 }
 
 @font-face {
-    font-family: open-sans;
+    font-family: open_sans;
     src: url(../webfonts/open_sans/OpenSans-Regular.ttf) format('truetype');
 }
 
-*{
-    font-family: OpenSans-Regular;
+body{
+    font-family: open_sans
 }
 
 a{
@@ -84,9 +84,13 @@ h1{
     line-height: 90px;
 }
 
-#title p{
-    font-size: 17px;
+q{
+    font-size: 14px;
     line-height: 23px;
+}
+
+.small{
+    font-size: 12px;
 }
 
 #content{
