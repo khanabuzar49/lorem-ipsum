@@ -53,7 +53,8 @@ table {
 }
 
 body{
-    font-family: open_sans
+    font-family: open_sans;
+    
 }
 
 a{
@@ -68,15 +69,16 @@ a:hover{
     text-align: center;
     font-size: 13px;
     line-height: 24px;
-    margin-top: 109px;
-    margin-left: 290px;
-    margin-right: 356px;
+    width: 60%;
+    margin: 0 auto;
+
 }
 
 #title{
     text-align: center;
-    margin-left: 309px;
-    margin-right: 309px;
+    width: 60%;
+    margin: 0 auto;
+
 }
 
 h1{
@@ -94,8 +96,9 @@ q{
 }
 
 #content{
-    margin-left: 309px;
-    margin-right: 309px;
+    width: 60%;
+    margin: 0 auto;
+
 }
 
 #content p{
