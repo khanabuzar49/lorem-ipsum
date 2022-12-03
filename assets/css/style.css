@@ -1,73 +1,140 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    box-sizing: border-box;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+/* blockquote,q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+} */
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+/* Font Face Declaration */
 
 @font-face {
     font-family: open_sans;
     src: url(../webfonts/open_sans/OpenSans-Regular.ttf) format('truetype');
 }
 
-body{
+@font-face {
+    font-family: lorem;
+    src: url(../webfonts/Duaphorin/DAUPHINN.TTF) format('truetype');
+}
+
+body {
     font-family: open_sans;
-    
 }
 
-a{
-    color: black;
+/* Common Stylings */
+.wrapper {
+    width: 902px;
+    margin: 0 auto;
+}
+header {
+    margin-top: 124px;
+    font-size: 12px;
+    text-align: center;   
 }
 
-a:hover{
-    color: red;
+header a {
+    display: inline-block;
+    padding: 2px;
+    text-decoration: underline;
+    color: #000;
+    line-height: 1.2;
 }
 
-#lang{
+h1 {
+    margin-top: 15px;
+    font-family: lorem;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
     text-align: center;
-    font-size: 13px;
+}
+
+q {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin: 28px 10px 5px 10px;
+}
+
+.heading q:last-child {
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+a:hover {
+    color: #d00;
+}
+
+.details {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg,#fff, #000, #fff) 1;
+    margin: 22px 0;
+    padding-top: 10px;
+}
+
+.details p {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.details p:last-child {
+    font-weight: bold;
+}
+
+.details p a {
+    color: #000;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* #lang{
+    text-align: center;
+    font-size: 12px;
     line-height: 24px;
     width: 60%;
     margin: 0 auto;
@@ -75,52 +142,53 @@ a:hover{
 
 }
 
-#title{
+*/
+
+/* #title {
     text-align: center;
     width: 60%;
     margin: 0 auto;
 
 }
 
-h1{
+h1 {
     font-size: 70px;
     line-height: 90px;
 }
 
-q{
+q {
     font-size: 14px;
     line-height: 23px;
 }
 
-.small{
+.small {
     font-size: 12px;
 }
 
-#content{
+#content {
     width: 60%;
     margin: 0 auto;
 
 }
 
-#content p{
+#content p {
     margin-bottom: 20px;
 }
 
-.link{
+.link {
     font-weight: bold;
 }
 
-.mail{
+.mail {
     text-align: center;
     margin-bottom: 90px;
 }
 
-.mail a{
+.mail a {
     text-decoration: none;
 }
 
-hr{
-    background-image: linear-gradient(to right, white, black, white);
-    border: 0px;
-    height: 1px;
-}
+.border-bottom-gradient {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg,white,black,white) 1;
+} */
